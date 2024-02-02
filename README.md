@@ -18,6 +18,6 @@ Navigate to specific folders for code samples.
 Execute SQL scripts in your database.
 Run Python scripts for data analysis.
 Import LookML files into Looker for visualization.
-Feel free to reach out for any questions or collaborations. Happy coding!
+Feel free to reach out for any questions or collaborations. Happy coding! ^^
 
 Author: Seftico Frig Injek B
