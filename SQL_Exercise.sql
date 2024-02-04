@@ -15,8 +15,8 @@ from
 where 
 	extract(year from order_date) = 2021
 	and is_valid = 1
-group by bulan
-order by total_highest_transaction_value desc 
+group by 1
+order by 2 desc 
 limit 1
 
 ---------------------------------------------------------------------------------------
@@ -33,8 +33,8 @@ from
 where 
 	extract(year from od.order_date) = 2022
 	and is_valid = 1
-group by sd.category 
-order by total_highest_transaction_value desc 
+group by 1
+order by 2 desc 
 limit 1
 
 ---------------------------------------------------------------------------------------
@@ -75,6 +75,7 @@ SELECT
     t22.category,
     t22.total_transaksi_2022,
     t21.total_transaksi_2021,
+    ROUND(CAST(t22.total_transaksi_2022 - t21.total_transaksi_2021 AS numeric), 0) AS growth,
     CASE
         WHEN t22.total_transaksi_2022 > t21.total_transaksi_2021 THEN 'Peningkatan'
         WHEN t22.total_transaksi_2022 < t21.total_transaksi_2021 THEN 'Penurunan'
@@ -125,6 +126,9 @@ WITH ProductSales AS (
         CASE
             WHEN LOWER(sd.sku_name) LIKE '%samsung%' THEN 'Samsung'
             WHEN LOWER(sd.sku_name) LIKE '%apple%' THEN 'Apple'
+            WHEN LOWER(sd.sku_name) LIKE '%iphone%' THEN 'Apple'
+            WHEN LOWER(sd.sku_name) LIKE '%macbook%' THEN 'Apple'
+            WHEN LOWER(sd.sku_name) LIKE '%imac%' THEN 'Apple'
             WHEN LOWER(sd.sku_name) LIKE '%sony%' THEN 'Sony'
             WHEN LOWER(sd.sku_name) LIKE '%huawei%' THEN 'Huawei'
             WHEN LOWER(sd.sku_name) LIKE '%lenovo%' THEN 'Lenovo'
