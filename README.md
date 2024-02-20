@@ -1,4 +1,4 @@
-## MySkill Data Analyst Final Project
+## 🔥 MySkill Data Analyst Final Project 🚀 
 
 This repository contains my final project for the MySkill Data Analyst bootcamp. Explore SQL scripts for data extraction, Python code for analysis, and Looker files for visualization. The project showcases my proficiency in SQL, Python, and Data Visualization.
 
@@ -22,4 +22,4 @@ This repository contains my final project for the MySkill Data Analyst bootcamp.
 
 **Feel free to reach out for any questions or collaborations. Happy coding! ^^**
 
-### Author : Seftico Frig Injek B
+### Author : Seftico Frig Injek B🌟
