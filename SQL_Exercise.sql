@@ -3,7 +3,7 @@
 */
 
 ---------------------------------------------------------------------------------------
---      1. MENEMUKAN BULAN YANG MEMILIKI TOTAL TRANSAKSI PALING BESAR PADA 2021      --
+--        1. TO FIND THE MONTH WITH THE HIGHEST TOTAL TRANSACTION IN 2021            --
 ---------------------------------------------------------------------------------------
 -- Source table: order_detail
 
@@ -20,7 +20,7 @@ order by 2 desc
 limit 1
 
 ---------------------------------------------------------------------------------------
---    2. MENEMUKAN KATEGORI YANG MEMILIKI TOTAL TRANSAKSI PALING BESAR PADA 2022     --
+--       2. TO FIND THE CATEGORY WITH THE HIGHEST TOTAL TRANSACTION IN 2022          --
 ---------------------------------------------------------------------------------------
 -- Source table: order_detail, sku_detail
 
@@ -38,10 +38,10 @@ order by 2 desc
 limit 1
 
 ---------------------------------------------------------------------------------------
---    3. MEMBANDINGKAN NILAI TRANSAKSI DARI MASING-MASING KATEGORI PADA TAHUN        --
---                                  2021 DENGAN 2022                                 --
---     MENAMPILKAN KATEGORI YANG MENGALAMI PENINGKATAN DAN PENURUNAN DARI TAHUN      --
---                                    2021 KE 2022                                   --        
+--              3. COMPARING TRANSACTION VALUES OF EACH CATEGORY BY YEAR             --
+--                                  2021 WITH 2022                                 --
+--     DISPLAYING CATEGORIES THAT EXPERIENCED INCREASE AND DECREASE FROM THE YEAR    --
+--                                    2021 TO 2022                                   --        
 ---------------------------------------------------------------------------------------
 -- Source table: order_detail, sku_detail
 
@@ -89,7 +89,7 @@ ORDER BY
 
    
 ---------------------------------------------------------------------------------------
---     4. MENAMPILKAN TOP 5 METODE PEMBAYARAN YANG PALING POPULER SELAMA 2022        --       
+--         4. DISPLAYING THE TOP 5 MOST POPULAR PAYMENT METHODS DURING 2022          --       
 ---------------------------------------------------------------------------------------
 -- Source table: order_detail, payment_detail
 
@@ -116,7 +116,7 @@ ORDER BY
 LIMIT 5;
 
 ---------------------------------------------------------------------------------------
---               5. MENGURUTKAN 5 PRODUK BERDASARKAN NILAI TRANSAKSI                 --
+--               5. SORTING THE 5 PRODUCTS BASED ON TRANSACTION VALUES               --
 --                      SAMSUNG, APPLE, SONY, HUAWEI, LENOVO                         --       
 ---------------------------------------------------------------------------------------
 -- Source table: order_detail, sku_detail
